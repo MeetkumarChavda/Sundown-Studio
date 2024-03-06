@@ -201,3 +201,42 @@ nav h4:hover::after {
     animation-iteration-count: infinite;
     background:radial-gradient(#FE350C , orangered);
 }
+
+#page-2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEAE3;
+}
+
+@keyframes marquee-animation {
+    to{
+        transform: translate(-100%);
+    }
+}
+.home-marquee-wrapper{
+    white-space: nowrap;
+    padding-top: 17vh;
+}
+.home-marquee{
+    display: inline-block;
+    animation:  marquee-animation 20s linear infinite;
+}
+.marquee-wrapper{
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.marquee-text{
+    font-size: 4vw;
+    display: inline-block;
+    font-family: font-id-2;
+}
+
+.marquee-logo{
+    width: 4vw;
+    height: 4vw;
+    margin: 0 1vw;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: orangered;
+}
