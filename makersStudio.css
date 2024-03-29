@@ -27,8 +27,8 @@
 html , body {
     width: 100%;
     height: 100%;
-    background-color: #EFEAE3;
     color: #EFEAE3;
+    background-color: #EFEAE3;
 }
 
 body{
@@ -40,46 +40,43 @@ body{
     height: 100vh;
     padding: 0 3vw;
     position: relative;
-    background-image: url(/Accets/Images/makers_studio.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     filter: brightness(90%);
+    background-size: cover;
     box-shadow:0 0 5px #000;
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/Accets/Images/makers_studio.webp);
 }
 
 #page-1 .hero-gradient {
-    width: 100%;
-    height: 12%;
-    background-image: linear-gradient(to bottom, #000, rgba(11, 5, 0, 0));
-    opacity: .75;
-    position: absolute;
     top: 0;
-    bottom: auto;
     left: 0;
     right: 0;
+    bottom: auto;
+    width: 100%;
+    height: 12%;
+    opacity: .75;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #000, rgba(11, 5, 0, 0));
 }
 
-
-
 #page-1>.proj-hero_content{
-    text-align: right;
     right: 3%;
     bottom: 9%;
-    position: absolute;
     z-index: 100;
+    position: absolute;
+    text-align: right;
 }
 
 #page-1>.proj-hero_content .inner{
+    color: #000000c3;
+    width: fit-content;
+    padding: 15px 25px;
     margin-left: 90%;
     margin-bottom: 2%;
-    color: #000000c3;
     border-radius: 25px;
-    padding: 15px 25px;
-    width: fit-content;
-    background-color:#EFEAE3;
     font-weight: 100;
+    background-color:#EFEAE3;
 }
 
 #page-1>.proj-hero_content h1{
@@ -103,16 +100,19 @@ body{
         transform: translate(0%,-25%) rotateX(5deg) ;
     }
 }
+
 @keyframes hero_2_Animation {
     to{
         transform: translate(-10%,-5%) skewX(20deg) rotateY(30deg);
     }
 }
+
 @keyframes hero_3_Animation {
    to{        
         transform: translate(-20%,10%)  rotateY(20deg) skewX(20deg);
     }
 }
+
 #page-1 .hero-1{
     top: 10%;
     height: 80%;
@@ -135,6 +135,7 @@ body{
     background:radial-gradient(#FE350C, #FE5216 ); 
     animation: hero_2_Animation 5s linear alternate infinite;
 }
+
 #page-1 .hero-3{
     width: 120%;
     height: 85%;
@@ -144,82 +145,86 @@ body{
     background:linear-gradient(to right,#FE350C , #FE5216);
     animation: hero_3_Animation 3s linear alternate infinite;
     animation-delay: 2s;
-
 }
 
 #page-2{
     width: 100%;
     height: 90vh;
-    background-color: transparent;
-    text-align: left;
     display: flex;
+    text-align: left;
     align-items: center;
+    background-color: transparent;
 }
 
 #page-2 h1{
-    position: absolute;
+   
     left:5%;
     width: fit-content;
     color:#0B0500;
     font-size: 3.5vw;
     font-weight: 900;
     line-height: 4vw;
+    position: absolute;
     letter-spacing:-1.52135px;
     font-family: font-id-1;
     word-spacing: 0px;
 }
 
 #page-3{
+    gap: 30px;
     width: 100%;
     height: 100vh;
     display: flex;
-    /* overflow: hidden; */
-    /* justify-content: space-evenly; */
     align-items: center;
-    gap: 30px;
 }
 
 #page-3 img{
-    transform: translateX(10%);
-    border-radius: 25px;
     height: 90vh;
+    border-radius: 25px;
+    transform: translateX(10%);
 }
 
 #page-4{
     width: 100%;
     height: 100vh;
-    /* background-color: #000; */
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     color: #0B0500;
 }
+
 @keyframes marquee-animation {
     to{
         transform: translate(-100%);
     }
 }
+
 .home-marquee-wrapper{
     white-space: nowrap;
     padding-top: 10vh;
 }
+
 .home-marquee{
     display: inline-block;
     animation:  marquee-animation 10s linear infinite ;
 }
+
 .marquee-wrapper{
     display: inline-flex; 
     align-items: center; 
     justify-content: center; 
 }
+
 .marquee-text{
     display: inline-block;
 }
+
 .marquee-text > h1{
     font-size: 9vw;
     font-family: font-id-2;
 }
+
 .marquee-logo{
     width: 4vw;
     height: 4vw;
@@ -230,15 +235,15 @@ body{
 }
 
 #page-4 #txt{
-    position: absolute;
+    gap: 5vh;
     top: 45vh ;
     right: 20vw;
     display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    line-height: 3.5vh;
-    font-family: font-id-4;
     font-weight: 900;
+    line-height: 3.5vh;
+    position: absolute;
+    flex-direction: column;
+    font-family: font-id-4;
 }
 
 #page-4 #txt h6{
@@ -252,9 +257,9 @@ body{
     width: 120vh;
     position: absolute;
     border-radius: 50%;
-    background:radial-gradient( #fc2e05 50%,#fc6027,#ff8234 );
     filter: blur(20px);
     animation: bigRound 6s linear infinite;
+    background:radial-gradient( #fc2e05 50%,#fc6027,#ff8234 );
 }
 
 @keyframes bigRound {
@@ -276,51 +281,51 @@ body{
 }
 
 #page-5 #img-1{
-    position: absolute;
-    height: 100%;
-    width: 35vw;
-    background-image: url(/Accets/Images/makersStudio/img5.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 25px;
+
     top: 30%;
     left: 5%;
+    height: 100%;
+    width: 35vw;
+    position: absolute;
+    border-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/Accets/Images/makersStudio/img5.webp);
 }
 
 #page-5 #img-2{
-    position: absolute;
-    height: 100%;
-    width: 35vw;
-    background-image: url(/Accets/Images/makersStudio/img6.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 25px;
     top: 60%;
     right: 5%;
+    width: 35vw;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/Accets/Images/makersStudio/img6.webp);
 }
 
 #page-6{
-    height: 200vh;
     width: 100%;
-    /* background: #000; */
-    position: relative;
-    display: flex;
-    justify-content: center;
+    height: 200vh;
     z-index: -1;
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
 
 #page-6 #banner{
+    bottom: 1%;
     height: 115vh;
     width: 95%;
-    background: url(/Accets/Images/makersStudio/img7.webp);
+    cursor: pointer;
     background-size: 1300px;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    bottom: 1%;
     border-radius: 25px;
+    background: url(/Accets/Images/makersStudio/img7.webp);
     transition:background-size 2s ease ;
-    cursor: pointer;
 }
 
 #page-6 #banner:hover{
@@ -328,24 +333,22 @@ body{
 }
 
 #page-6 #banner #txt{
+    left: 8%;
     bottom: 15%;
     position: absolute;    
-    /* text-align: left; */
-    left: 8%;
 } 
 
 #page-6 #banner #txt h4{
-    position: absolute;
     left: 5%;
-
+    position: absolute;
 }
 
 #page-6 #banner #txt #gol{
-    position: absolute;
-    height: 10px;
     width: 10px;
-    background-color: red;
+    height: 10px;
     border-radius: 50%;
+    position: absolute;
+    background-color: red;
 }
 
 #page-6 h1{
@@ -356,9 +359,9 @@ body{
 
 #page-6 .inner{
     color: #000000c3;
+    width: fit-content;
     border-radius: 25px;
     padding: 10px 25px;
-    width: fit-content;
-    background-color:#EFEAE3;
     font-weight: 100;
+    background-color:#EFEAE3;
 }

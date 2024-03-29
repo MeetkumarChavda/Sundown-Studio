@@ -1,8 +1,3 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('main'),
-//     smooth: true
-// });
-
 a='main'
 
 function loco(a){
@@ -44,11 +39,11 @@ var locoScrollInstance = loco('main');
 
 gsap.from('.proj-hero_content h1',{
     opacity:0,
-    filter:'invert(100%)',
-    transform:'translateY(100%)',
     delay:1,
     duration:.8,
     stagger:.5,
+    filter:'invert(100%)',
+    transform:'translateY(100%)',
 })
 
 gsap.from('.proj-hero_content .inner',{
@@ -83,7 +78,6 @@ gsap.to('#page-3',{
     scrollTrigger:{
         trigger:'#page-3',
         scroller:'main',
-        // markers:true,
         start:'top 0%',
         end:'top -150%',
         scrub:5,
@@ -97,7 +91,6 @@ gsap.from('#page-5 #img-1',{
     scrollTrigger:{
         trigger:'#page-5 #img-1',
         scroller:'main',
-        // markers:true,
         start:'top 160%',
         end:'top 120%',
         scrub:1
@@ -110,7 +103,6 @@ gsap.from('#page-5 #img-2',{
     scrollTrigger:{
         trigger:'#page-5 #img-2',
         scroller:'main',
-        // markers:true,
         start:'top 158%',
         end:'top 120%',
         scrub:1
