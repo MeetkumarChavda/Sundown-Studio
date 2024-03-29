@@ -601,3 +601,9 @@ nav h4:hover::after {
     animation: shape_3_animation 5s linear alternate infinite;
     background: linear-gradient(to right bottom, orangered, #FE330A ,#fecd0ae5);
 }
+
+.f_i_wrapper{
+    /* display: flex; */
+    color: #000;
+    text-decoration: none;
+}

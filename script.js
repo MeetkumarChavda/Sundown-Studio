@@ -1,7 +1,7 @@
 const scroll = new LocomotiveScroll({
     el: document.querySelector('main'),
     smooth: true,
-    lerp: 0.01
+    lerp: 0.05
 });
 
 class Video {
