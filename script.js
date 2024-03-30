@@ -102,6 +102,23 @@ function service(element) {
     lastClickedHeading = element;
 }
 
+const menu = document.querySelector("nav h3");
+const shutter = document.querySelector(".mobile_Screen_Shutter");
+const navImg = document.querySelector("nav img");
+let unClicked = 0;
+menu.addEventListener("click",function(){
+   if(unClicked == 0){
+        shutter.style.top = 0;
+        navImg.style.opacity = 0;
+        unClicked = 1
+   }else{
+        shutter.style.top = "-120%";
+        navImg.style.opacity = 1;
+        unClicked = 0
+   }
+
+});
+
 // Initialize functions
 handleFeaturedHover();
 handleListElementHover();
