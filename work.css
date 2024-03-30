@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    background-color:#EFEAE3;
+   
+    height: auto;
+    width: 100%;
+}
+#strt{
+  /* background-color:red; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    /* position:absolute; */
+    /* line-height: 30px; */
+    /* position:; */
+    /* z-index: 500; */
+} 
+#strt h1{   
+    position: absolute;
+    font-size:20vh ;
+    padding: 30px 3vw;
+    text-transform: uppercase;
+    font-family:sans-serif ;
+}
+
+
+/* Additional CSS for when the section becomes fixed */
+#part2.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    /* z-index: 1000; Ensure it's above other content */
+    /* width: 100%; Take full width */
+}
+
+#part2{
+    position: relative;
+    /* top:-100%; */
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    width:330px;
+    padding: 10px 20px;
+    border:0.01vh  solid  
+    rgb(17, 8, 0);
+    border-radius:50px;
+    margin-top:30vh;
+    gap: 5px; 
+    z-index: 200;
+    margin-left: 3vw   ;
+    background-color:#eeeae5;
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+@media screen and (max-width: 560px) {
+    
+#part2{
+    position: relative;
+    /* top:-100%; */
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    width:330px;
+    padding: 10px 20px;
+    border:0.1vh  solid 
+    rgb(11, 5, 0);
+    border-radius:50px;
+    margin-top:30vh;
+    gap: 5px; 
+    z-index: 200;
+    margin-left: 3vw   ;
+    background-color:#eeeae5;
+}
+}
+#part2 h3{
+    font-size: 2vh;
+    font-weight: 100;
+    top: 50px;
+    left: 65px;
+ 
+}
+/* #round{
+    position: relative;
+} */
+
+#strt {
+    position: relative;
+    z-index: 2;
+}
+
+ #i1{
+    height:55vw;
+    width: 55vw;
+    border-radius:50%; 
+    position:absolute;
+    background-color:orangered;
+    top:-30vh;
+    left:25vh;
+ 
+    filter: blur(20px);
+ }#i2{
+    height:55vw;
+    width: 55vw;
+    border-radius:50%; 
+    position:absolute ;
+    left:25vh;
+    top:-30vh;    
+    background-color:orangered;
+    animation: round 3s linear  infinite alternate-reverse ;
+    filter: blur(20px);
+   
+    /* transform: translate(-50%,-50%); */
+ }@keyframes round{
+    from{
+        transform: translate(10%,10%);
+        
+    }
+    to{
+        transform: translate(-10%,-10%);
+      
+    }
+ }
+ #p1 {
+    /* overflow: hidden */
+    /* margin-top: 10vh; */
+    height: auto ;
+    width:100%;
+}
+
+
+#p2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 100px; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 25vh 10vh;
+}
+
+#round {
+    background-color: transparent;
+    position: fixed;
+}
+
+#p2 img {
+    width: 100%;
+    height: 10vh;
+}
+
+#p2 a:nth-child(even) img {
+    height: 40vh;
+}
+
+#p2 a:nth-child(odd) img {
+    height: 30vh;
+}
+
+img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 910px) {
+   
+
+    #p2 {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 100px; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 25vh 10vh;
+    }
+    
+    
+    
+    #p2 img {
+        width: 100%;
+        height: 10vh;
+    }
+
+    #p2 a:nth-child(even) img {
+        height: 60vh;
+    }
+    
+    #p2 a:nth-child(odd) img {
+        height: 60vh;
+    }
+}
+ 
+@media screen and (max-width: 760px) {
+   
+
+    #p2 {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 100px; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 25vh 10vh;
+    }
+    
+    
+    
+    #p2 img {
+        width: 100%;
+        height: calc(110vh / 2); /* Adjust the height dynamically */
+    }
+
+    #p2 a:nth-child(even) img {
+        height: calc(110vh / 2); /* Adjust the height dynamically */
+    }
+    
+    #p2 a:nth-child(odd) img {
+        height: calc(110vh / 2); /* Adjust the height dynamically */
+    }
+}
+

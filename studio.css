@@ -1,0 +1,378 @@
+@font-face {
+    font-family: neu;
+    src: url(./Accets/Fonts/NeueHaasDisplay-Roman.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neu;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+#main {
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
+}
+
+#page1 {
+    height: 180vh;
+    width: 100%;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 2vw 0vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4 {
+    padding: 10px 20px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#nav-part2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-part2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#nav-part2 h4:hover a {
+    color: #fff;
+}
+
+.heading{
+    width: 80vw;
+    margin-top: 21vh;
+    height: 58vh;
+}
+
+.heading h1{
+    padding-left: 6vw;
+    font-weight: 900;
+    text-align: center;
+    font-size: 12vw;
+    line-height: 19vh;
+    z-index: 10;
+}
+
+.heading #head1{
+    padding-left: 17vw;
+    z-index: -2;
+}
+
+.heading #head3{
+    padding-left: 33vw;
+}
+
+.heading #head3,.heading #head2{
+    z-index: 2;
+}
+
+#hero1,#hero2{
+    top: 25%;
+    width: 60vw;
+    height: 60vw;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    background-image: radial-gradient(red,orangered 99%);
+    z-index: -1;
+}
+
+#hero2{
+    animation: round 2s infinite alternate ease;
+}
+
+@keyframes round{
+    from{
+        transform: translate(10%,-10%);
+        
+    }
+    to{
+        transform: translate(-10%,10%);
+      
+    }
+ }
+
+.container{
+    margin-top: 15vh;
+    display: flex;
+
+}
+
+.container .page1-image img{
+    height: 51vh;
+    border-radius: 3.5vh;
+}
+.container .page1-image{
+    margin-left: 4.5vw;
+}
+
+.container .page1-info{
+    width: 50vw;
+    margin-left: 10.5vw;
+}
+
+.container .page1-info h3{
+    line-height: 5.2vh;
+    font-size: 5.5vh;
+    font-weight: 800;
+    padding-top: 8vh;
+}
+
+.section-wrapper{
+    background-image: linear-gradient(to bottom,#efeae3,#ff9831 30%,#ff6f00);
+}
+
+/* Page-2 */
+
+#page-2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 2vw;
+}
+
+#page-2 h1{
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 7.7vh;
+}
+
+.page2-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.page2-info .page2-text{
+    /* border: 2px solid red; */
+    height: 75vh;
+    width: 45vw;
+}
+
+.page2-info .page2-text h3{
+    padding-top: 5vh;
+    padding-left: 7vw;
+    line-height: 5.2vh;
+    font-size: 5.5vh;
+    font-weight: 800;
+}
+
+.page2-info .page2-points{
+    /* border: 2px solid rgb(0, 0, 0); */
+    height: 75vh;
+    width: 45vw;
+}
+
+.page2-info .page2-points ul{
+    padding-top: 4vh;
+    list-style:none;
+    list-style-position: inside;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.page2-info .page2-points ul li{
+    padding: 2.7vh;
+}
+
+.page2-info .page2-points ul li .order{
+   font-size: 2.2vh;
+   color:rgba(0, 0, 0, 0.318);
+   font-weight: 200;
+}
+
+.page2-info .page2-points ul li .point{
+    font-size: 3vh;
+    font-weight: 200;
+    position: relative;
+    left: 40px;
+}
+
+.page2-info .page2-points ul hr{
+    border: 0.3px solid rgba(0, 0, 0, 0.152);
+    width: 40vw;
+}
+
+/* Page -3  */
+
+#page-3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page-3 h1{
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 7.7vh;
+}
+
+.page3-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.page3-info .page3-text{
+    /* border: 2px solid red; */
+    height: 75vh;
+    width: 45vw;
+}
+
+.page3-info .page3-text h3{
+    padding-top: 5vh;
+    padding-left: 7vw;
+    line-height: 5.2vh;
+    font-size: 5.5vh;
+    font-weight: 800;
+}
+
+.page3-info .page3-points{
+    /* border: 2px solid rgb(0, 0, 0); */
+    height: 75vh;
+    width: 45vw;
+}
+
+.page3-info .page3-points ul{
+    padding-top: 4vh;
+    list-style:none;
+    list-style-position: inside;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.page3-info .page3-points ul li{
+    padding: 2.7vh;
+}
+
+.page3-info .page3-points ul li .order{
+   font-size: 2.2vh;
+   color:rgba(0, 0, 0, 0.318);
+   font-weight: 200;
+}
+
+.page3-info .page3-points ul li .point{
+    font-size: 3vh;
+    font-weight: 200;
+    position: relative;
+    left: 40px;
+}
+
+.page3-info .page3-points ul hr{
+    border: 0.3px solid rgba(0, 0, 0, 0.152);
+    width: 40vw;
+}
+
+/* Page -4  */
+
+#page-4{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+#page-4 h1{
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 7.7vh;
+}
+
+.page4-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.page4-info .page4-text{
+    /* border: 2px solid red; */
+    height: 75vh;
+    width: 45vw;
+}
+
+.page4-info .page4-text h3{
+    padding-top: 5vh;
+    padding-left: 7vw;
+    line-height: 5.2vh;
+    font-size: 5.5vh;
+    font-weight: 800;
+}
+
+.page4-info .page4-points{
+    /* border: 2px solid rgb(0, 0, 0); */
+    height: 75vh;
+    width: 45vw;
+}
+
+.page4-info .page4-points ul{
+    padding-top: 4vh;
+    list-style:none;
+    list-style-position: inside;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.page4-info .page4-points ul li{
+    padding: 2.7vh;
+}
+
+.page4-info .page4-points ul li .order{
+   font-size: 2.2vh;
+   color:rgba(0, 0, 0, 0.318);
+   font-weight: 200;
+}
+
+.page4-info .page4-points ul li .point{
+    font-size: 3vh;
+    font-weight: 200;
+    position: relative;
+    left: 40px;
+}
+
+.page4-info .page4-points ul hr{
+    border: 0.3px solid rgba(0, 0, 0, 0.152);
+    width: 40vw;
+}
