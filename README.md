@@ -1,6 +1,6 @@
 ﻿# Sundown Studio
 
-![Sundown Studio](./Sundown-Studio/Accets/Images/makers_studio.webp)
+![Sundown Studio](![alt text](image.png))
 
 ## Table of Contents
 
@@ -33,27 +33,7 @@ Check out the live demo of the project: [Sundown Studio Live Demo](https://meetk
 - **GSAP** 
 
 ## Project Structure
-
-Sundown-Studio/
-├── .vscode/
-│ └── [VSCode settings and configurations]
-├── Accets/
-│ ├── Fonts/
-│ ├── Images/
-│ ├── Svg/
-│ └── Videos/
-├── connect.html
-├── index.html
-├── makersStudio.html
-├── nav.css
-├── README.md
-├── script.js
-├── studio.css
-├── style.css
-├── work.css
-├── work.html
-├── work.js
-└── favicon.ico
+![alt text](image-1.png)
 
 ## Contact
 
